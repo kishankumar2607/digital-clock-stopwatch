@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Clock</title>
+    <link rel="stylesheet" href="clock.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Digital Clock & Stopwatch</h1>
+
+      <section class="time-display">
+        <fieldset>
+          <legend>Clock</legend>
+          <div class="clock">
+            <span id="hours">00</span>: <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+            <span id="ampm">AM</span>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="stopwatch-display">
+        <fieldset>
+          <legend>Stopwatch</legend>
+          <div class="stopwatch">
+            <span id="s_minutes">00</span>: <span id="s_seconds">00</span>:
+            <span id="s_ms">000</span>
+          </div>
+          <div class="controls">
+            <input type="button" id="start" value="Start" />
+            <input type="button" id="stop" value="Stop" />
+            <input type="button" id="reset" value="Reset" />
+          </div>
+        </fieldset>
+      </section>
+      <small>&copy; "KishanKumarDas" 2024</small>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="library_clock.js"></script>
+    <script src="library_stopwatch.js"></script>
+    <script src="clock.js"></script>
+  </body>
+</html>
